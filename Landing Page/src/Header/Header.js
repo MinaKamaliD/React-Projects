@@ -1,9 +1,13 @@
 import "./Header.css";
+import NavBar from "./NavBar";
 function Header() {
   return (
-    <section>
-      <span>This is the header</span>
-    </section>
+    <div>
+      <section>
+        <span>Header Span</span>
+      </section>
+      <NavBar></NavBar>
+    </div>
   );
 }
 export default Header;
