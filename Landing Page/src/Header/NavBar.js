@@ -1,6 +1,6 @@
 import "./NavBar.css";
 
-function New() {
+function NavBar() {
   return (
     <div>
       <header>
@@ -16,4 +16,4 @@ function New() {
   );
 }
 
-export default New;
+export default NavBar;
