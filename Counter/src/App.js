@@ -1,7 +1,14 @@
 import "./App.css";
-
-function App() {
-  return;
+import Counter from "./Components/Counter";
+import React from "react";
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Counter></Counter>
+      </div>
+    );
+  }
 }
 
 export default App;
