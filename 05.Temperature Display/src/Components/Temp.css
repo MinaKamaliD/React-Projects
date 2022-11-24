@@ -15,8 +15,9 @@
   border-radius: 50%;
   margin: auto;
   text-align: center;
-  font-size: 60px;
-  line-height: 210px;
+  font-size: 50px;
+  line-height: 220px;
+  border: 2px solid white;
 }
 .sign {
   display: flex;
@@ -37,4 +38,10 @@
 }
 .sign h2:hover {
   background-color: rgb(186, 189, 196);
+}
+.hot {
+  background-color: orangered;
+}
+.cold {
+  background-color: rgb(31, 188, 228);
 }
