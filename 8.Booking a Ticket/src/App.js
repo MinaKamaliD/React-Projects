@@ -1,8 +1,12 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React, { Component } from "react";
+import Ticket from "./Components/Ticket/Ticket";
 
-function App() {
-  return <div></div>;
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <Ticket />
+      </div>
+    );
+  }
 }
-
-export default App;
