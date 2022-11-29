@@ -31,6 +31,19 @@ export default class AddForm extends Component {
 
   submitHandler(event) {
     event.preventDefault();
+
+    let { title, author, year } = this.state;
+    if (title && author && year) {
+      let newBook = {
+        id: this.state.books.length + 1,
+        title,
+        author,
+        year,
+      };
+
+      this.setState({ books: [...this.state.books, newBook] });
+    }
+    this.setState({ title: "", author: "", year: "" });
   }
 
   render() {
@@ -85,7 +98,7 @@ export default class AddForm extends Component {
           </thead>
           <tbody id="book-list">
             {this.state.books.map((book) => (
-              <Book />
+              <Book {...book} key={book.id} />
             ))}
           </tbody>
         </table>
