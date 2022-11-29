@@ -1,0 +1,9 @@
+tr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-top: 30px; */
+}
+th {
+  margin: 10px 200px;
+}
