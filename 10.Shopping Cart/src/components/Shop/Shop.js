@@ -91,7 +91,7 @@ export default class Shop extends Component {
               </li>
             </ul>
           </nav>
-          <h1 class="band-name band-name-large">SabzLearn Shop</h1>
+          <h1 class="band-name band-name-large">Online Shop</h1>
         </header>
         <section class="container content-section">
           <div class="shop-items">
