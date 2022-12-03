@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 
 export default class CartProduct extends Component {
+  clickHandler(id) {
+    this.props.onRemove(id);
+  }
   render() {
     let { id, title, price, img } = this.props;
     return (
@@ -11,7 +14,11 @@ export default class CartProduct extends Component {
         </div>
         <span class="cart-price cart-column">${price}</span>
         <div class="cart-quantity cart-column">
-          <button class="btn btn-danger" type="button">
+          <button
+            class="btn btn-danger"
+            type="button"
+            onClick={this.clickHandler.bind(this, id)}
+          >
             REMOVE
           </button>
         </div>

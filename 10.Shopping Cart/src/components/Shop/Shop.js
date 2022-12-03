@@ -32,23 +32,48 @@ export default class Shop extends Component {
         {
           id: 3,
           href: "https://www.facebook.com",
-          img: "Images/YouTube Logo.png",
+          img: "Images/FaceBook Logo.png",
         },
       ],
     };
 
     this.addProductToCart = this.addProductToCart.bind(this);
+    this.emptyShoppingCart = this.emptyShoppingCart.bind(this);
+    this.removeProductFromCart = this.removeProductFromCart.bind(this);
   }
 
   addProductToCart(productId) {
+    console.log(productId);
+
     let mainProduct = this.state.products.find((product) => {
       return product.id === productId;
     });
 
+    console.log(mainProduct);
+
     this.setState((prevState) => {
-      return { shoppingCart: [...prevState.shoppingCart, mainProduct] };
+      return {
+        shoppingCart: [...prevState.shoppingCart, mainProduct],
+      };
     });
   }
+
+  emptyShoppingCart() {
+    this.setState({
+      shoppingCart: [],
+    });
+  }
+
+  removeProductFromCart(productId) {
+    let newShoppingCart = this.state.shoppingCart.filter((product) => {
+      return product.id !== productId;
+    });
+
+    this.setState({
+      shoppingCart: newShoppingCart,
+    });
+  }
+
   render() {
     return (
       <>
@@ -84,10 +109,14 @@ export default class Shop extends Component {
           </div>
           <div class="cart-items">
             {this.state.shoppingCart.map((product) => (
-              <CartProduct {...product} />
+              <CartProduct {...product} onRemove={this.removeProductFromCart} />
             ))}
           </div>
-          <button class="btn btn-primary btn-purchase" type="button">
+          <button
+            class="btn btn-primary btn-purchase"
+            type="button"
+            onClick={this.emptyShoppingCart}
+          >
             Empty Cart
           </button>
         </section>
@@ -95,7 +124,9 @@ export default class Shop extends Component {
           <div class="container main-footer-container">
             <h3 class="band-name">The Generics</h3>
             <ul class="nav footer-nav">
-              <Social />
+              {this.state.socials.map((social) => (
+                <Social {...social} />
+              ))}
             </ul>
           </div>
         </footer>
