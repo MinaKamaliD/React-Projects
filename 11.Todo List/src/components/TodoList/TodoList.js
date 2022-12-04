@@ -12,13 +12,13 @@ export default class TodoList extends Component {
     };
 
     this.addTodo = this.addTodo.bind(this);
-    // this.removeTodo = this.removeTodo.bind(this)
-    // this.editTodo = this.editTodo.bind(this)
+    this.removeTodo = this.removeTodo.bind(this);
+    this.editTodo = this.editTodo.bind(this);
     this.todoTitleHandler = this.todoTitleHandler.bind(this);
     // this.statusHandler = this.statusHandler.bind(this)
   }
-  todoTitleHandler(evet) {
-    this.setState({ todoTitle: evet.target.value });
+  todoTitleHandler(event) {
+    this.setState({ todoTitle: event.target.value });
   }
   addTodo(event) {
     event.preventDefault();
@@ -34,6 +34,22 @@ export default class TodoList extends Component {
         todoTitle: "",
       };
     });
+  }
+  removeTodo(todoId) {
+    let newTodos = this.state.todos.filter((todo) => {
+      return todo.id !== todoId;
+    });
+    this.setState({ todos: newTodos });
+  }
+
+  editTodo(todoId) {
+    let newTodos = [...this.state.todos];
+    newTodos.forEach((todo) => {
+      if (todo.id === todoId) {
+        todo.completed = !todo.completed;
+      }
+    });
+    this.setState({ todos: newTodos });
   }
   render() {
     return (
@@ -61,7 +77,12 @@ export default class TodoList extends Component {
         <div className="todo-container">
           <ul className="todo-list">
             {this.state.todos.map((todo) => (
-              <Todo {...todo} />
+              <Todo
+                key={todo.id}
+                {...todo}
+                onRemove={this.removeTodo}
+                onEdit={this.editTodo}
+              />
             ))}
           </ul>
         </div>
