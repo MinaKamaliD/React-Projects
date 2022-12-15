@@ -1,0 +1,44 @@
+body {
+  background-color: #1c1c1d;
+}
+/* .container {
+  display: flex;
+  justify-content: center;
+} */
+
+.form {
+  background-color: #fff;
+  width: 50%;
+  height: 12rem;
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form input {
+  width: 100%;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  height: 20px;
+}
+.form label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
+.form__name,
+.form__age {
+  width: 90%;
+  margin: 5px auto;
+}
+.form button {
+  margin-top: 5px;
+  margin-left: 32px;
+  height: 30px;
+  width: 90px;
+  font-size: 16px;
+  color: #fff;
+  background-color: purple;
+  border: none;
+  cursor: pointer;
+}
