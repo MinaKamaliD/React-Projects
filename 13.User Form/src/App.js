@@ -1,9 +1,10 @@
-import UserInput from "./components/UserInput";
+import React from "react";
+import AddUser from "./components/Users/AddUser";
 
 function App() {
   return (
     <div>
-      <UserInput></UserInput>
+      <AddUser></AddUser>
     </div>
   );
 }
