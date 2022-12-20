@@ -4,35 +4,50 @@ import Card from "../UI/Card";
 import Button from "../UI/Button";
 
 const AddUser = () => {
+  const [enteredUsername, setEnteredUsername] = useState("");
+  const [enteredAge, setEnteredAge] = useState("");
+
   const addUserHandler = (event) => {
     event.preventDefault();
-  };
-  const [username, setUsername] = useState("");
-  const [userage, setUserage] = useState("");
 
-  const nameInputHandler = (event) => {
-    setUsername(event.target.value);
+    if (enteredUsername.trim().length === 0 || enteredAge.trim().length === 0) {
+      return;
+    }
+    if (enteredAge < 1) {
+      return;
+    }
+    console.log(enteredAge);
+    setEnteredUsername("");
+    setEnteredAge("");
   };
-  const ageInputHandler = (event) => {
-    setUserage(event.target.value);
+
+  const usernameChaneHandler = (event) => {
+    setEnteredUsername(event.target.value);
+  };
+  const ageChaneHandler = (event) => {
+    setEnteredAge(event.target.value);
   };
 
   return (
     <Card className={styles.input}>
       <form onSubmit={addUserHandler}>
         <label htmlFor="username">Username</label>
-        <input id="username" type="text" onChange={nameInputHandler} />
+        <input
+          id="username"
+          type="text"
+          value={enteredUsername}
+          onChange={usernameChaneHandler}
+        />
 
         <label htmlFor="age">Age (Years)</label>
         <input
           id="age"
           type="number"
-          onChange={ageInputHandler}
-          min={1}
-          step={1}
+          value={enteredAge}
+          onChange={ageChaneHandler}
         />
 
-        <Button>Add User</Button>
+        <Button type="submit">Add User</Button>
       </form>
     </Card>
   );
