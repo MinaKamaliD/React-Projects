@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./AddUser.module.css";
 import Card from "../UI/Card";
+import Button from "../UI/Button";
 
 const AddUser = () => {
   const addUserHandler = (event) => {
@@ -31,7 +32,7 @@ const AddUser = () => {
           step={1}
         />
 
-        <button>Add User</button>
+        <Button>Add User</Button>
       </form>
     </Card>
   );
