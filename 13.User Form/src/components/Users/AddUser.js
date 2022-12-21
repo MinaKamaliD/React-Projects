@@ -16,7 +16,6 @@ const AddUser = () => {
     if (enteredAge < 1) {
       return;
     }
-    console.log(enteredAge);
     setEnteredUsername("");
     setEnteredAge("");
   };
