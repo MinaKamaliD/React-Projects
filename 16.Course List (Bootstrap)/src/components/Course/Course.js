@@ -5,12 +5,12 @@ import Card from "react-bootstrap/Card";
 import "bootstrap/dist/css/bootstrap.css";
 
 class Course extends Component {
-  render() {
+  render(props) {
     return (
-      <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" src="./img/pic1.png" />
+      <Card className="mb-5">
+        <Card.Img variant="top" src={this.props.src} />
         <Card.Body>
-          <Card.Title>React JS</Card.Title>
+          <Card.Title>{this.props.title}</Card.Title>
           <Card.Text>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
             repellat! Nesciunt harum debitis, nulla aut sapiente facere minima.
@@ -18,7 +18,7 @@ class Course extends Component {
         </Card.Body>
         <div className="d-grid gap-2 rounded-3">
           <Button variant="primary" size="lg">
-            Block level button
+            Add To List
           </Button>
         </div>
       </Card>
