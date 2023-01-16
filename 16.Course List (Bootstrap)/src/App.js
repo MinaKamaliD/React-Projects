@@ -6,6 +6,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Course from "./components/Course/Course";
+import NavBar from "./components/NavBar/NavBar";
 
 function App() {
   const courses = [
@@ -20,35 +21,39 @@ function App() {
   ];
 
   return (
-    <Container>
-      <Row>
-        <Col xs={12} sm={6} md={3}>
-          <Course {...courses[0]}></Course>
-        </Col>
-        <Col xs={12} sm={6} md={3}>
-          <Course {...courses[1]}></Course>
-        </Col>
-        <Col xs={12} sm={6} md={3}>
-          <Course {...courses[2]}></Course>
-        </Col>
+    <>
+      <NavBar></NavBar>
 
-        <Col xs={12} sm={6} md={3}>
-          <Course {...courses[3]}></Course>
-        </Col>
-        <Col xs={12} sm={6} md={3}>
-          <Course {...courses[4]}></Course>
-        </Col>
-        <Col xs={12} sm={6} md={3}>
-          <Course {...courses[5]}></Course>
-        </Col>
-        <Col xs={12} sm={6} md={3}>
-          <Course {...courses[6]}></Course>
-        </Col>
-        <Col xs={12} sm={6} md={3}>
-          <Course {...courses[7]}></Course>
-        </Col>
-      </Row>
-    </Container>
+      <Container>
+        <Row>
+          <Col xs={12} sm={6} md={3}>
+            <Course {...courses[0]}></Course>
+          </Col>
+          <Col xs={12} sm={6} md={3}>
+            <Course {...courses[1]}></Course>
+          </Col>
+          <Col xs={12} sm={6} md={3}>
+            <Course {...courses[2]}></Course>
+          </Col>
+
+          <Col xs={12} sm={6} md={3}>
+            <Course {...courses[3]}></Course>
+          </Col>
+          <Col xs={12} sm={6} md={3}>
+            <Course {...courses[4]}></Course>
+          </Col>
+          <Col xs={12} sm={6} md={3}>
+            <Course {...courses[5]}></Course>
+          </Col>
+          <Col xs={12} sm={6} md={3}>
+            <Course {...courses[6]}></Course>
+          </Col>
+          <Col xs={12} sm={6} md={3}>
+            <Course {...courses[7]}></Course>
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 }
 
