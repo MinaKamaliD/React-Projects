@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/React-Projects/01.NavBar/static/css/main.e1b93bec.css",
-    "main.js": "/React-Projects/01.NavBar/static/js/main.0769cff0.js",
-    "static/js/787.0c3f432a.chunk.js": "/React-Projects/01.NavBar/static/js/787.0c3f432a.chunk.js",
-    "static/media/logo.svg": "/React-Projects/01.NavBar/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/React-Projects/01.NavBar/index.html",
-    "main.e1b93bec.css.map": "/React-Projects/01.NavBar/static/css/main.e1b93bec.css.map",
-    "main.0769cff0.js.map": "/React-Projects/01.NavBar/static/js/main.0769cff0.js.map",
-    "787.0c3f432a.chunk.js.map": "/React-Projects/01.NavBar/static/js/787.0c3f432a.chunk.js.map"
+    "main.css": "/React-Projects/04.Counter/static/css/main.e1db6e43.css",
+    "main.js": "/React-Projects/04.Counter/static/js/main.b1938845.js",
+    "static/js/787.037d72d9.chunk.js": "/React-Projects/04.Counter/static/js/787.037d72d9.chunk.js",
+    "index.html": "/React-Projects/04.Counter/index.html",
+    "main.e1db6e43.css.map": "/React-Projects/04.Counter/static/css/main.e1db6e43.css.map",
+    "main.b1938845.js.map": "/React-Projects/04.Counter/static/js/main.b1938845.js.map",
+    "787.037d72d9.chunk.js.map": "/React-Projects/04.Counter/static/js/787.037d72d9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1b93bec.css",
-    "static/js/main.0769cff0.js"
+    "static/css/main.e1db6e43.css",
+    "static/js/main.b1938845.js"
   ]
 }
