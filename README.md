@@ -10,7 +10,7 @@
 | 04  |  [Counter](https://github.com/MinaKamaliD/React-Projects/tree/master/04.Counter)  | [Live Demo]()  |
 | 05  | [Temperature-Display](https://github.com/MinaKamaliD/React-Projects/tree/master/05.Temperature-Display)  | [Live Demo]()  |
 | 06  |    [Form-Validation](https://github.com/MinaKamaliD/React-Projects/tree/master/06.Form-Validation)    | [Live Demo]()  |
-| 07  |        [Quiz-App](https://github.com/MinaKamaliD/React-Projects/tree/master/07.Quiz-App)       | [Live Demo]()  |
+| 07  |        [Quiz-App](https://github.com/MinaKamaliD/React-Projects/tree/master/07.Quiz-App)       | [Live Demo](https://minakamalid.github.io/React-Projects/)  |
 | 08  |       [Booking-a-Ticket](https://github.com/MinaKamaliD/React-Projects/tree/master/08.Booking-a-Ticket)      | [Live Demo]()  |
 | 09  |      [BookList](https://github.com/MinaKamaliD/React-Projects/tree/master/09.BookList)       | [Live Demo]()  |
 | 10  |        [Shopping-Cart](https://github.com/MinaKamaliD/React-Projects/tree/master/10.Shopping-Cart)       | [Live Demo]()  |
