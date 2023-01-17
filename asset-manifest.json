@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/React-Projects/04.Counter/static/css/main.e1db6e43.css",
-    "main.js": "/React-Projects/04.Counter/static/js/main.b1938845.js",
-    "static/js/787.037d72d9.chunk.js": "/React-Projects/04.Counter/static/js/787.037d72d9.chunk.js",
-    "index.html": "/React-Projects/04.Counter/index.html",
-    "main.e1db6e43.css.map": "/React-Projects/04.Counter/static/css/main.e1db6e43.css.map",
-    "main.b1938845.js.map": "/React-Projects/04.Counter/static/js/main.b1938845.js.map",
-    "787.037d72d9.chunk.js.map": "/React-Projects/04.Counter/static/js/787.037d72d9.chunk.js.map"
+    "main.css": "/React-Projects-04.Counter/static/css/main.e1db6e43.css",
+    "main.js": "/React-Projects-04.Counter/static/js/main.1ef8b7ca.js",
+    "static/js/787.037d72d9.chunk.js": "/React-Projects-04.Counter/static/js/787.037d72d9.chunk.js",
+    "index.html": "/React-Projects-04.Counter/index.html",
+    "main.e1db6e43.css.map": "/React-Projects-04.Counter/static/css/main.e1db6e43.css.map",
+    "main.1ef8b7ca.js.map": "/React-Projects-04.Counter/static/js/main.1ef8b7ca.js.map",
+    "787.037d72d9.chunk.js.map": "/React-Projects-04.Counter/static/js/787.037d72d9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e1db6e43.css",
-    "static/js/main.b1938845.js"
+    "static/js/main.1ef8b7ca.js"
   ]
 }
