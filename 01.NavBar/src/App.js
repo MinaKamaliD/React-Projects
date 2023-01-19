@@ -1,13 +1,10 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Header from "./Header";
+import React, { Component } from "react";
+import NavBar from "./components/NavBar/NavBar";
 
-function App() {
-  return (
-    <div className="App">
-      <Header></Header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return <NavBar></NavBar>;
+  }
 }
 
 export default App;
